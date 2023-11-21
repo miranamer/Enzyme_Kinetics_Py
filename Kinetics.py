@@ -90,8 +90,8 @@ vmax_delta_avg = 0
 km_delta_avg = 0
 
 for i in range(len(app_vmax) - 1):
-  vmax_delta = app_vmax[i+1] - app_vmax[i]
-  km_delta = app_km[i+1] - app_km[i]
+  vmax_delta = round(app_vmax[i+1], 2) - round(app_vmax[i], 2)
+  km_delta = round(app_km[i+1], 2) - round(app_km[i], 2)
   
   vmax_delta_avg += vmax_delta
   km_delta_avg += km_delta
